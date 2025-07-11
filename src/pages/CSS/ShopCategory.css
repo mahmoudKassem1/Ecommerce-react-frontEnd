@@ -1,0 +1,129 @@
+.ShopCategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ShopCategory-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.shopCategory-indexSort {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ShopCategory-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ShopCategory-sort:hover {
+  background-color: #e6e6e6;
+}
+
+.ShopCategory-products {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.ShopCategory-loadmore {
+  margin-top: 40px;
+}
+
+.ShopCategory-loadmore button {
+  background-color: #ff4141;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ShopCategory-loadmore button:hover {
+  background-color: #e03434;
+}
+@media (max-width: 768px) {
+  .ShopCategory {
+    padding: 30px 4%;
+    gap: 16px;
+  }
+
+  .ShopCategory-banner {
+    max-height: 200px;
+    border-radius: 8px;
+  }
+
+  .shopCategory-indexSort {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .ShopCategory-products {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .ShopCategory-loadmore button {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ShopCategory {
+    padding: 20px 3%;
+  }
+
+  .ShopCategory-banner {
+    max-height: 150px;
+    border-radius: 6px;
+  }
+
+  .shopCategory-indexSort {
+    font-size: 15px;
+  }
+
+  .ShopCategory-products {
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .ShopCategory-sort {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .ShopCategory-loadmore button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
